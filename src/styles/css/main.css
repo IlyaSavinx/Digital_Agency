@@ -151,3 +151,43 @@ html {
   background-color: white;
   margin-top: 3px;
 }
+
+.banner-text {
+  text-align: center;
+  padding-top: 6.9rem;
+}
+.banner-text__title {
+  font-weight: 70rem;
+  font-size: 15rem;
+  line-height: 18.2rem;
+  color: #FFFFFF;
+  font-family: "Inter";
+}
+.banner-text__title--active {
+  padding-right: 21rem;
+}
+.banner-text__subtitle {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 40rem;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  color: #FFFFFF;
+  max-width: 51.5rem;
+  text-align: center;
+}
+.banner-text__button {
+  font-size: 18px;
+  padding: 1.5rem 4.4rem 1.5rem 4.5rem;
+  border-radius: 3rem;
+  background-color: #ffc93e;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.banner-text__button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}

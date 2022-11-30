@@ -1,0 +1,40 @@
+.banner-text {
+	text-align: center;
+	padding-top: 6.9rem;
+	&__title {
+		font-weight: 70rem;
+		font-size: 15rem;
+		line-height: 18.2rem;
+		color: $Fcgeneral;
+		font-family: $Ffglobal;
+		&--active {
+			padding-right: 21rem;
+		}
+	}
+	&__subtitle {
+		font-family: $Ffglobal;
+		font-style: normal;
+		font-weight: 40rem;
+		font-size: 2.4rem;
+		line-height: 4rem;
+		color: $Fcgeneral;
+        max-width: 51.5rem;
+        text-align: center;
+	}
+	&__button {
+		font-size: 18px;
+		// padding: 15px 44px 15px 45px;
+		padding: 1.5rem 4.4rem 1.5rem 4.5rem;
+		border-radius: 3rem;
+		background-color: #ffc93e;
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+        &:hover{
+            background-color: transparent;
+            cursor: pointer; 
+        }
+	}
+}
