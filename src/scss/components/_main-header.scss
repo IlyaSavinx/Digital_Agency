@@ -1,0 +1,48 @@
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 15rem 0 15rem;
+	padding-top: 3rem;
+	.header-logo__dalio-icon {
+		cursor: pointer;
+	}
+}
+.header-navigation {
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+	&__link {
+		text-decoration: none;
+		color: white;
+		font-weight: 500;
+		font-size: 18px;
+		line-height: 22px;
+		font-family: "Inter";
+		&:hover {
+			color: yellow;
+		}
+	}
+}
+.header-content__burger-menu {
+	width: 16px;
+	height: 1px;
+	background-color: white;
+	&::after {
+		content: "";
+		display: flex;
+		align-items: center;
+		width: 16px;
+		height: 1px;
+		background-color: white;
+		margin-top: 3px;
+	}
+	// &::before{
+	//     content: '';
+	//     display: flex;
+	//     width: 16px;
+	//     height: 1px;
+	//     background-color: white;
+	//     margin-bottom: 9px;
+	// }
+}

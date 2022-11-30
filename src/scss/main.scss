@@ -1,1 +1,6 @@
-@import '../config/reset';
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Inter&family=Open+Sans&family=Raleway&display=swap');
+@import '../scss/config/reset';
+@import '../scss/variables/var';
+@import '../scss/components/base-config';
+@import '../scss/components/main-header';
+@import '../scss/components/banner';

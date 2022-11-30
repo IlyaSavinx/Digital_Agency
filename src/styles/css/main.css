@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Inter&family=Open+Sans&family=Raleway&display=swap");
 /* Указываем box sizing */
 *,
 *::before,
@@ -81,4 +82,72 @@ select {
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  background-color: #172048;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15rem 0 15rem;
+  padding-top: 3rem;
+}
+.main-header .header-logo__dalio-icon {
+  cursor: pointer;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}
+.header-navigation__link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: "Inter";
+}
+.header-navigation__link:hover {
+  color: yellow;
+}
+
+.header-content__burger-menu {
+  width: 16px;
+  height: 1px;
+  background-color: white;
+}
+.header-content__burger-menu::after {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 16px;
+  height: 1px;
+  background-color: white;
+  margin-top: 3px;
 }
