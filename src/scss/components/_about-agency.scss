@@ -2,6 +2,7 @@
 	max-width: 113.963rem;
 	margin: 0 auto;
 	display: flex;
+    flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
 }
@@ -35,12 +36,15 @@
 	}
 }
 .about-agency__photos {
+	position: relative;
+	z-index: 0;
 	&::after {
 		content: url(../../assets/icons/circle_line.png);
 		position: absolute;
+		z-index: -1;
 		right: 0;
 		top: 85%;
-		left: 92%;
+		left: 85%;
 	}
 }
 .statistics-bars {
