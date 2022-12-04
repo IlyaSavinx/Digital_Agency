@@ -90,9 +90,13 @@ html {
 
 .wrapper {
   background-color: #172048;
-  height: 100vh;
   background-size: contain;
-  background-repeat: no-repeat;
+}
+
+.main-container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0px 15px;
 }
 
 .main-header {
@@ -155,6 +159,8 @@ html {
 .banner-text {
   text-align: center;
   padding-top: 6.9rem;
+  max-width: 700px;
+  margin: 0 auto;
 }
 .banner-text__title {
   font-weight: 70rem;
@@ -173,10 +179,12 @@ html {
   font-size: 2.4rem;
   line-height: 4rem;
   color: #FFFFFF;
-  max-width: 51.5rem;
-  text-align: center;
+  max-width: 515px;
+  text-align: left;
+  padding-top: 4rem;
 }
 .banner-text__button {
+  display: block;
   font-size: 18px;
   padding: 1.5rem 4.4rem 1.5rem 4.5rem;
   border-radius: 3rem;
@@ -186,8 +194,93 @@ html {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  margin-top: 4.4rem;
 }
 .banner-text__button:hover {
   background-color: transparent;
   cursor: pointer;
+}
+
+.banner-text__perfomance {
+  position: relative;
+  border-radius: 30px;
+  bottom: 5rem;
+}
+
+.about-agency__block {
+  max-width: 113.963rem;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.about-agency__text {
+  font-family: "Inter";
+  color: #FFFFFF;
+  width: 50%;
+}
+.about-agency__text-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-transform: capitalize;
+}
+.about-agency__text-subtitle {
+  padding-top: 4rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+.about-agency__text-button {
+  font-size: 18px;
+  padding: 1.5rem 4.4rem 1.5rem 4.5rem;
+  border-radius: 3rem;
+  background-color: #ffc93e;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 4.8rem;
+}
+
+.about-agency__photos::after {
+  content: url(../../assets/icons/circle_line.png);
+  position: absolute;
+  right: 0;
+  top: 85%;
+  left: 92%;
+}
+
+.statistics-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 23.7rem;
+}
+.statistics-bars .statistics-bar {
+  padding-top: 14.1rem;
+}
+.statistics-bars .statistics-bar__title {
+  color: #FFFFFF;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+}
+.statistics-bars .statistics-bar__subtitle {
+  color: #FFFFFF;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
 }
