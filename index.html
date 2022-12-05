@@ -30,8 +30,11 @@
 					</nav>
 					<span class="header-content__burger-menu"></span>
 				</header>
-				<main class="main">
-					<section class="banner">
+			</div>
+
+			<main class="main">
+				<section class="banner">
+					<div class="main-container">
 						<div class="banner-text">
 							<h2 class="banner-text__title">Digital</h2>
 							<h2 class="banner-text__title banner-text__title--active">
@@ -41,15 +44,17 @@
 								Full-service design support that growing B2B companies need.
 								World leading agency.
 							</p>
-							<button class="banner-text__button" type="button">
+							<button class="general-button" type="button">
 								Our Projects ↗
 							</button>
 						</div>
 						<img class="banner-text__perfomance"
 						src=./src/assets/pictures/perfomance.jpg alt="perfomance-icon" >
-					</section>
+					</div>
+				</section>
 
-					<section class="about-agency">
+				<section class="about-agency">
+					<div class="main-container">
 						<div class="about-agency__block">
 							<div class="about-agency__text">
 								<h2 class="about-agency__text-title">
@@ -66,7 +71,10 @@
 									unique set of capabilities sets us apart from other agencies
 									and positions DIG to help you attack your goals.
 								</p>
-								<button class="about-agency__text-button" type="button">
+								<button
+									class="general-button about-agency__text-button"
+									type="button"
+								>
 									Contact us ↗
 								</button>
 							</div>
@@ -78,6 +86,7 @@
 								/>
 							</div>
 						</div>
+
 						<div class="statistics-bars">
 							<div class="statistics-bar">
 								<h1 class="statistics-bar__title">4.8k</h1>
@@ -96,57 +105,137 @@
 								<p class="statistics-bar__subtitle">Won Awards</p>
 							</div>
 						</div>
-						</div>
-					</section>
+					</div>
+				</section>
 
-					<section class="approach">
-						<div class="approach-background">
-							<div class="main-container main-container--approach-container">
-								<div class="approach-demonstration">
-									<img
-										class="approach-demonstration__image"
-										src="./src/assets/pictures/demonstration.jpg"
-										alt="demonstration__image"
-									/>
+				<section class="approach">
+					<div class="approach-background">
+						<div class="main-container main-container--approach-container">
+							<div class="approach-demonstration">
+								<img
+									class="approach-demonstration__image"
+									src="./src/assets/pictures/demonstration.jpg"
+									alt="demonstration__image"
+								/>
+							</div>
+							<div class="approach-text">
+								<h2 class="approach-text__title">Our Solution Approach</h2>
+								<div
+									class="approach-text__subtitles approach-text__subtitles--top"
+								>
+									<h1 class="approach-text__subtitle">
+										Data Analysis with problem factor
+									</h1>
+									<p class="approach-text__comments">
+										Delivering the spatial expertise of the largest, most
+										sophisticated performance marketing agencies, while
+										providing intimate, boutique-like support.
+									</p>
 								</div>
-								<div class="approach-text">
-									<h2 class="approach-text__title">Our Solution Approach</h2>
-									<div class="approach-text__subtitles">
-										<h1 class="approach-text__subtitle">
-											Data Analysis with problem factor
-										</h1>
-										<p class="approach-text__comments">
-											Delivering the spatial expertise of the largest, most
-											sophisticated performance marketing agencies, while
-											providing intimate, boutique-like support.
-										</p>
-									</div>
-									<div class="approach-text__subtitles">
-										<h1 class="approach-text__subtitle">
-											Data Analysis with problem factor
-										</h1>
-										<p class="approach-text__comments">
-											Delivering the spatial expertise of the largest, most
-											sophisticated performance marketing agencies, while
-											providing intimate, boutique-like support.
-										</p>
-									</div>
-									<div class="approach-text__subtitles">
-										<h1 class="approach-text__subtitle">
-											Data Analysis with problem factor
-										</h1>
-										<p class="approach-text__comments">
-											Delivering the spatial expertise of the largest, most
-											sophisticated performance marketing agencies, while
-											providing intimate, boutique-like support.
-										</p>
-									</div>
+								<div class="approach-text__subtitles">
+									<h1 class="approach-text__subtitle">
+										Data Analysis with problem factor
+									</h1>
+									<p class="approach-text__comments">
+										Delivering the spatial expertise of the largest, most
+										sophisticated performance marketing agencies, while
+										providing intimate, boutique-like support.
+									</p>
+								</div>
+								<div class="approach-text__subtitles">
+									<h1 class="approach-text__subtitle">
+										Data Analysis with problem factor
+									</h1>
+									<p class="approach-text__comments">
+										Delivering the spatial expertise of the largest, most
+										sophisticated performance marketing agencies, while
+										providing intimate, boutique-like support.
+									</p>
 								</div>
 							</div>
 						</div>
-					</section>
-				</main>
-			
+					</div>
+				</section>
+
+				<section class="servise">
+					<div class="main-container">
+						<div class="servise-title">
+							<h2 class="servise-title__text">Service we can help you</h2>
+							<button
+								class="general-button servise-title__text-button"
+								type="button"
+							>
+								See All
+							</button>
+						</div>
+						<div class="servise-cards">
+							<div class="servise-card servise-card--border-top-left">
+								<img
+									class="servise-card__icon"
+									src="./src/assets/icons/icons_edit.png"
+									alt="icons edit"
+								/>
+								<h2 class="card__title">Content Writing</h2>
+								<p class="card__paragraph">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+									consequat nunc id purus pretium sagittis. Nulla ridiculus
+									nullam bibendum luctus viverra. Eu pellentesque sem sed platea
+									diam dignissim duis purus.
+								</p>
+								<button class="general-button" type="button">Read More</button>
+							</div>
+
+							<div class="servise-card servise-card--border-top-right">
+								<img
+									class="servise-card__icon"
+									src="./src/assets/icons/icons_file.png"
+									alt="icons file"
+								/>
+								<h2 class="card__title">UX Research</h2>
+								<p class="card__paragraph">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+									consequat nunc id purus pretium sagittis. Nulla ridiculus
+									nullam bibendum luctus viverra. Eu pellentesque sem sed platea
+									diam dignissim duis purus.
+								</p>
+								<button class="general-button" type="button">Read More</button>
+							</div>
+
+							<div class="servise-card servise-card--border-bottom-left">
+								<img
+									class="servise-card__icon"
+									src="./src/assets/icons/pencil-line.png"
+									alt="icons pencil-line"
+								/>
+								<h2 class="card__title">Branding</h2>
+								<p class="card__paragraph">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+									consequat nunc id purus pretium sagittis. Nulla ridiculus
+									nullam bibendum luctus viverra. Eu pellentesque sem sed platea
+									diam dignissim duis purus.
+								</p>
+								<button class="general-button" type="button">Read More</button>
+							</div>
+
+							<div class="servise-card servise-card--border-bottom-left">
+								<img
+									class="servise-card__icon"
+									src="./src/assets/icons/icons_desktop-device.png"
+									alt="icons_desktop-device"
+								/>
+								<h2 class="card__title">Branding</h2>
+								<p class="card__paragraph">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. A
+									consequat nunc id purus pretium sagittis. Nulla ridiculus
+									nullam bibendum luctus viverra. Eu pellentesque sem sed platea
+									diam dignissim duis purus.
+								</p>
+								<button class="general-button" type="button">Read More</button>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 		</div>
 	</body>
 </html>

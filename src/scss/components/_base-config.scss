@@ -1,17 +1,37 @@
-html{
-    font-size: 10px;
-    scroll-behavior: smooth;
+html {
+	font-size: 10px;
+	scroll-behavior: smooth;
 }
-.wrapper{
-    background-color: $Bgcolor;
-    // background-image: url(../../../src/assets/icons/Background\ elements.svg);
-    // height: 100vh;
-    background-size: contain;
-    // background-repeat: no-repeat;
-   
+.wrapper {
+	background-color: $Bgcolor;
+	// background-image: url(../../../src/assets/icons/Background\ elements.svg);
+	// height: 100vh;
+	background-size: contain;
+	// background-repeat: no-repeat;
 }
-.main-container{
-    max-width: 1470px;
-    margin: 0 auto;
-    padding: 0px 15px;
+.main-container {
+	max-width: 1470px;
+	margin: 0 auto;
+	padding: 0px 15px;
+}
+
+.general-button {
+	display: block;
+    border: none;
+	font-size: 18px;
+	padding: 1.5rem 4.4rem 1.5rem 4.5rem;
+	border-radius: 3rem;
+	background-color: $Bgcolorbutton;
+	font-family: "Inter";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	margin-top: 4.4rem;
+	&:hover {
+		background-color: transparent;
+		cursor: pointer;
+		color: $Bgcolorbutton;
+		border: 1px solid $Bgcolorbutton;
+	}
 }

@@ -1,0 +1,14 @@
+.servise-title {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    margin-top: 12rem;
+	&__text {
+		font-family: $Ffglobal;
+		color: $Fcgeneral;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 48px;
+		line-height: 58px;
+	}
+}

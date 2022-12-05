@@ -21,30 +21,13 @@
 		font-size: 2.4rem;
 		line-height: 4rem;
 		color: $Fcgeneral;
-        max-width: 515px;
-        text-align: left;
+		max-width: 515px;
+		text-align: left;
 		padding-top: 4rem;
 	}
-	&__button {
-		display: block;
-		font-size: 18px;
-		padding: 1.5rem 4.4rem 1.5rem 4.5rem;
-		border-radius: 3rem;
-		background-color: #ffc93e;
-		font-family: "Inter";
-		font-style: normal;
-		font-weight: 500;
-		font-size: 18px;
-		line-height: 22px;
-		margin-top: 4.4rem;
-	
-        &:hover{
-            background-color: transparent;
-            cursor: pointer; 
-        }
-	}
 }
-.banner-text__perfomance{
+
+.banner-text__perfomance {
 	position: relative;
 	border-radius: 30px;
 	bottom: 5rem;
