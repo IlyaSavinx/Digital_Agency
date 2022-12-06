@@ -1,8 +1,12 @@
+.servise-container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
 .servise-title {
 	display: flex;
 	justify-content: space-between;
-    align-items: center;
-    margin-top: 12rem;
+	align-items: center;
+	margin-top: 12rem;
 	&__text {
 		font-family: $Ffglobal;
 		color: $Fcgeneral;
@@ -11,4 +15,47 @@
 		font-size: 48px;
 		line-height: 58px;
 	}
+}
+.servise-cards {
+	display: grid;
+	padding-top: 4rem;
+	gap: 3rem;
+	grid-template-columns: 555px 555px;
+	.servise-card {
+		background-color: #353f5b;
+		padding: 8.83rem 4.1rem 8.3rem 3.4rem;
+		font-family: $Ffglobal;
+		color: $Fcgeneral;
+		height: 552px;
+		.card__title {
+			padding-top: 2.933rem;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 30px;
+			line-height: 36px;
+		}
+		.card__paragraph {
+			padding-top: 2.4rem;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 30px;
+		}
+	}
+	.servise-card--border-top-left{
+		
+		border-radius: 50px 0px 0px 0px;
+	}
+	.servise-card--border-top-right{
+		
+		border-radius: 0px 50px 0px 0px;
+	}
+	.servise-card--border-bottom-left{
+		border-radius: 0px 0px 0px 50px;
+	}
+	.servise-card--border-bottom-right{
+		
+		border-radius: 0px 0px 50px 0px;
+	}
+	
 }

@@ -101,7 +101,7 @@ html {
 
 .general-button {
   display: block;
-  border: none;
+  border: 1px solid #ffc93e;
   font-size: 18px;
   padding: 1.5rem 4.4rem 1.5rem 4.5rem;
   border-radius: 3rem;
@@ -372,6 +372,11 @@ html {
   width: 80%;
 }
 
+.servise-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
 .servise-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -391,4 +396,128 @@ html {
   font-weight: 700;
   font-size: 48px;
   line-height: 58px;
+}
+
+.servise-cards {
+  display: grid;
+  padding-top: 4rem;
+  gap: 3rem;
+  grid-template-columns: 555px 555px;
+}
+.servise-cards .servise-card {
+  background-color: #353f5b;
+  padding: 8.83rem 4.1rem 8.3rem 3.4rem;
+  font-family: "Inter";
+  color: #FFFFFF;
+  height: 552px;
+}
+.servise-cards .servise-card .card__title {
+  padding-top: 2.933rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+.servise-cards .servise-card .card__paragraph {
+  padding-top: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+}
+.servise-cards .servise-card--border-top-left {
+  border-radius: 50px 0px 0px 0px;
+}
+.servise-cards .servise-card--border-top-right {
+  border-radius: 0px 50px 0px 0px;
+}
+.servise-cards .servise-card--border-bottom-left {
+  border-radius: 0px 0px 0px 50px;
+}
+.servise-cards .servise-card--border-bottom-right {
+  border-radius: 0px 0px 50px 0px;
+}
+
+.our-work-container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.work-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12rem 0rem 4.8rem 0rem;
+}
+.work-title__text {
+  font-family: "Inter";
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 48px;
+}
+.work-title__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 43%;
+}
+.work-title__navigation-link {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #FFFFFF;
+  padding: 1.2rem 0 0;
+  cursor: pointer;
+}
+.work-title__navigation-link:hover {
+  color: #ffc93e;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 3.2rem;
+}
+.projects__card-image {
+  border-radius: 50px;
+  width: 100%;
+}
+.projects__card-title {
+  font-family: "Inter";
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 3.2rem 0rem 3.2rem 0rem;
+  max-width: 39.3rem;
+}
+.projects__card-paragraph {
+  font-family: "Inter";
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.projects__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews {
+  position: relative;
 }
