@@ -4,7 +4,7 @@
 .approach-background {
 	width: 100%;
 	min-height: 65.8vh;
-	background: linear-gradient(to right, #fec83e 40%, #353f5b 40%);
+	background: linear-gradient(to right, #fec83e 40%, $Bgcolorsection 40%);
 	.main-container--approach-container {
 		display: flex;
 		justify-content: space-between;
@@ -49,6 +49,7 @@
 		}
 	}
 	&__subtitles {
+		color: $Fcparagraph;
 		display: flex;
 		flex-direction: column;
 		padding-top: 4.2rem;

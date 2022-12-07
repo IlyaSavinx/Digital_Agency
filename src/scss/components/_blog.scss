@@ -1,0 +1,53 @@
+.blog-container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.blog__title {
+	font-family: $Ffglobal;
+	color: $Fcgeneral;
+	font-weight: 700;
+	font-size: 48px;
+	padding: 12rem 0 4.8rem;
+}
+.blog-cards {
+	display: flex;
+    justify-content: space-between;
+	gap: 3.2rem;
+	}
+
+.blog-card {
+	&__blog-image {
+		border-radius: 50px;
+		margin: 0 0 2.9rem;
+		width: 100%;
+	}
+	&__badge {
+		font-family: $Ffglobal;
+		color: $Fcgeneral;
+		font-weight: 500;
+		font-size: 12px;
+		padding: 5px 12px;
+		border-radius: 36px;
+		cursor: pointer;
+		&:hover {
+			color: $Bgcolorbutton;
+		}
+	}
+	&__name-data {
+		font-family: $Ffglobal;
+		color: $Fcgeneral;
+		font-weight: 500;
+		font-size: 16px;
+		padding: 1.6rem 0;
+	}
+    &__title {
+		font-family: $Ffglobal;
+		color: $Fcgeneral;
+		font-weight: 700;
+		font-size: 30px;
+		
+	}
+}
+.general__button-blog{
+    margin-top: 2rem;
+}
