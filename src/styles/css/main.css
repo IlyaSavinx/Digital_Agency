@@ -400,6 +400,9 @@ html {
   font-size: 48px;
   line-height: 58px;
 }
+.servise-title .servise-title__text-button {
+  margin: 0;
+}
 
 .servise-cards {
   display: grid;
@@ -515,6 +518,15 @@ html {
   font-family: "Inter";
   color: #E0E5F3;
   font-size: 16px;
+}
+
+.projects__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .reviews {
