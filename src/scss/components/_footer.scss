@@ -1,3 +1,15 @@
 .main-footer {
-	background-color:#353F5B ;
+	background-color:$Bgcolorsection ;
+}
+.footer-requisites {
+	display: flex;
+	justify-content: space-evenly;
+	position: relative;
+	padding: 0 2rem;
+}
+.footer__form{
+	padding: 80px 48px;
+		background-color: $Bgcolorbutton;
+		border-radius: 30px;
+		margin-top: 4.8rem;
 }

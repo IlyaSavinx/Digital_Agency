@@ -687,3 +687,21 @@ html {
 .main-footer {
   background-color: #353F5B;
 }
+
+.footer-requisites {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.footer__form {
+  padding: 80px 48px;
+  background-color: #ffc93e;
+  border-radius: 30px;
+  margin-top: 4.8rem;
+}
