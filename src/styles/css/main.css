@@ -125,6 +125,42 @@ html {
   border: 1px solid #ffc93e;
 }
 
+@media (max-width: 1000px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+  .pagination {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffc93e;
+    position: relative;
+    margin: 0 auto;
+  }
+  .pagination::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffc93e;
+    position: absolute;
+    left: 40px;
+  }
+  .pagination::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffc93e;
+    position: absolute;
+    right: 40px;
+  }
+}
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,28 +196,103 @@ html {
   font-family: "Inter";
 }
 .header-navigation__link:hover {
-  color: yellow;
+  color: #FFC93E;
 }
 
 .header-content__burger-menu {
-  width: 16px;
+  width: 16.5px;
   height: 1px;
-  background-color: white;
+  background-color: #FFFFFF;
+  position: relative;
 }
 .header-content__burger-menu::after {
   content: "";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 16px;
+  width: 16.5px;
   height: 1px;
-  background-color: white;
-  margin-top: 3px;
+  background-color: #FFFFFF;
+  bottom: 6px;
+  position: absolute;
+}
+.header-content__burger-menu::before {
+  content: "";
+  width: 16.5px;
+  height: 1px;
+  background-color: #FFFFFF;
+  top: 6px;
+  position: absolute;
 }
 
+@media (max-width: 1000px) {
+  .banner-text__title {
+    font-size: 120px;
+  }
+  .banner-text__title::after {
+    content: "";
+    background-image: url(../../assets/icons/dotted_line\ adaptiv.svg);
+    left: 20%;
+    top: 110px;
+    width: 60vw;
+  }
+  .banner-text__title-sub {
+    font-size: 120px;
+    padding: 0 0 0 4rem;
+  }
+  .banner-text__world-class {
+    max-width: 170px;
+    float: left;
+  }
+  .banner-text__development {
+    width: 300px;
+    position: relative;
+    top: 20px;
+    right: 2rem;
+    border-radius: 65px;
+  }
+  .banner-text-container {
+    margin: 0 0 25% 5%;
+  }
+  .banner-text-container::before {
+    content: "";
+    background-image: url(../../../../src/assets/image/icons/play\ video.svg);
+    bottom: -70px;
+    width: 120px;
+    height: 120px;
+    right: 20px;
+  }
+  .banner-text__perfomance-img {
+    position: absolute;
+    top: 14.5rem;
+    left: 0rem;
+    width: 24vw;
+  }
+  .banner-text__perfomance-circle {
+    position: absolute;
+    left: 11rem;
+    top: 29rem;
+    z-index: 0;
+    width: 12vw;
+  }
+  .banner-text__scroll-down {
+    position: relative;
+    left: 25%;
+    top: 5%;
+  }
+}
+@media (max-width: 1000px) and (max-width: 500px) {
+  .header-navigation {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .header-logo__dalio-icon {
+    cursor: pointer;
+  }
+}
+@media (max-width: 1000px) {
+  .main-header {
+    margin: 0;
+  }
+}
 .banner-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -311,6 +422,131 @@ html {
   width: 9vw;
 }
 
+@media (max-width: 1000px) {
+  .banner-text__title {
+    font-size: 120px;
+  }
+  .banner-text__title::after {
+    content: "";
+    background-image: url(../../assets/icons/dotted_line\ adaptiv.svg);
+    left: 20%;
+    top: 110px;
+    width: 60vw;
+  }
+  .banner-text__title-sub {
+    font-size: 120px;
+    padding: 0 0 0 8rem;
+  }
+  .banner-text__world-class {
+    max-width: 170px;
+    float: left;
+  }
+  .banner-text__development {
+    width: 300px;
+    position: relative;
+    top: 20px;
+    right: -24rem;
+    border-radius: 65px;
+  }
+  .banner-text-container {
+    margin: 0 0 25% 5%;
+  }
+  .banner-text-container::before {
+    content: "";
+    background-image: url(../../assets/icons/play\ video.svg);
+    bottom: -70px;
+    width: 120px;
+    height: 120px;
+    right: -75px;
+  }
+  .banner-text__perfomance-img {
+    position: absolute;
+    top: 14.5rem;
+    left: -40rem;
+    width: 20vw;
+    height: 30vh;
+  }
+  .banner-text__perfomance-circle {
+    position: absolute;
+    left: -13rem;
+    top: 55rem;
+    z-index: 0;
+    width: 12vw;
+  }
+  .banner-text__scroll-down {
+    position: relative;
+    left: 25%;
+    top: 5%;
+  }
+}
+@media (max-width: 500px) {
+  .banner-text {
+    max-width: 500px;
+  }
+  .banner-text__title {
+    font-size: 70px;
+  }
+  .banner-text__title::after {
+    left: 17%;
+    top: 8%;
+    width: 340px;
+  }
+  .banner-text__title-sub {
+    font-size: 70px;
+    padding: 0;
+  }
+  .banner-text__subtitle {
+    max-width: 80rem;
+    font-size: 18px;
+    padding: 2rem 0;
+    width: 515px;
+    min-height: 70px;
+    padding: 3rem 0;
+  }
+  .banner-text__world-class {
+    max-width: 100px;
+  }
+  .banner-text__development {
+    width: 270px;
+    position: static;
+    margin-bottom: 3rem;
+  }
+  .banner-text-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 0 0 -10%;
+  }
+  .banner-text-container::before {
+    content: "";
+    background-image: url(../../assets/icons/play\ video.svg);
+    bottom: 220px;
+    width: 120px;
+    height: 120px;
+    right: 150px;
+  }
+  .banner-text__scroll-down {
+    display: none;
+  }
+  .general__button-baner {
+    display: none;
+  }
+  .banner-text__perfomance-img {
+    position: relative;
+    width: 41vw;
+    top: 100px;
+    left: 30px;
+    z-index: 0;
+  }
+  .banner-text__perfomance-circle {
+    position: absolute;
+    left: 35rem;
+    top: 680px;
+    z-index: 0;
+    width: 19vw;
+  }
+}
 .about-agency__block {
   max-width: 113.963rem;
   margin: 0 auto;
@@ -318,8 +554,6 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -828,6 +1062,8 @@ html {
   border: none;
   border-bottom: 1px solid #172048;
   width: 100%;
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
 }
 .form__email:focus {
   outline: none;

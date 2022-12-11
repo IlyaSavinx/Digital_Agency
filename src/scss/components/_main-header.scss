@@ -20,29 +20,101 @@
 		line-height: 22px;
 		font-family: "Inter";
 		&:hover {
-			color: yellow;
+			color: #FFC93E;
 		}
 	}
 }
 .header-content__burger-menu {
-	width: 16px;
+	width: 16.5px;
 	height: 1px;
-	background-color: white;
+	background-color: $Fcgeneral;
+    position: relative;
 	&::after {
-		content: "";
-		display: flex;
-		align-items: center;
-		width: 16px;
+        content: '';
+		width: 16.5px;
 		height: 1px;
-		background-color: white;
-		margin-top: 3px;
+		background-color: $Fcgeneral;
+        bottom: 6px;
+        position: absolute;
 	}
-	// &::before{
-	//     content: '';
-	//     display: flex;
-	//     width: 16px;
-	//     height: 1px;
-	//     background-color: white;
-	//     margin-bottom: 9px;
-	// }
+    &::before {
+        content: '';
+		width: 16.5px;
+		height: 1px;
+		background-color: $Fcgeneral;
+        top: 6px;
+        position: absolute;
+	}
+}
+
+@media (max-width: 1000px) {
+	.banner-text {
+		&__title {
+			font-size: 120px;
+			&::after {
+				content: "";
+				background-image: url(../../assets/icons/dotted_line\ adaptiv.svg);
+				left: 20%;
+				top: 110px;
+				width: 60vw;
+			}
+		}
+		&__title-sub {
+			font-size: 120px;
+			padding: 0 0 0 4rem;
+		}
+	}
+	.banner-text__world-class {
+		max-width: 170px;
+		float: left;
+	}
+	.banner-text__development {
+		width: 300px;
+		position: relative;
+		top: 20px;
+		right: 2rem;
+		border-radius: 65px;
+	}
+	.banner-text-container {
+		margin: 0 0 25% 5%;
+		&::before {
+			content: "";
+			background-image: url(../../../../src/assets/image/icons/play\ video.svg);
+			bottom: -70px;
+			width: 120px;
+			height: 120px;
+			right: 20px;
+		}
+	}
+
+	.banner-text__perfomance-img {
+		position: absolute;
+		top: 14.5rem;
+		left: 0rem;
+		width: 24vw;
+	}
+	.banner-text__perfomance-circle {
+		position: absolute;
+		left: 11rem;
+		top: 29rem;
+		z-index: 0;
+		width: 12vw;
+	}
+	.banner-text__scroll-down {
+		position: relative;
+		left: 25%;
+		top: 5%;
+	}
+
+	@media (max-width: 500px) {
+		.header-navigation {
+			display: none;
+		}
+	}
+	.header-logo__dalio-icon {
+		cursor: pointer;
+	}
+	.main-header {
+		margin: 0;
+	}
 }

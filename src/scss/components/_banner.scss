@@ -112,3 +112,133 @@
 	z-index: 0;
 	width: 9vw;
 }
+
+@media (max-width: 1000px) {
+	.banner-text {
+		&__title {
+			font-size: 120px;
+			&::after {
+				content: "";
+				background-image: url(../../assets/icons/dotted_line\ adaptiv.svg);
+				left: 20%;
+				top: 110px;
+				width: 60vw;
+			}
+		}
+		&__title-sub {
+			font-size: 120px;
+			padding: 0 0 0 8rem;
+		}
+	}
+	.banner-text__world-class {
+		max-width: 170px;
+		float: left;
+	}
+	.banner-text__development {
+		width: 300px;
+		position: relative;
+		top: 20px;
+		right: -24rem;
+		border-radius: 65px;
+	}
+	.banner-text-container {
+		margin: 0 0 25% 5%;
+		&::before {
+			content: "";
+			background-image: url(../../assets/icons/play\ video.svg);
+			bottom: -70px;
+			width: 120px;
+			height: 120px;
+			right: -75px;
+		}
+	}
+	.banner-text__perfomance-img {
+		position: absolute;
+		top: 14.5rem;
+		left: -40rem;
+		width: 20vw;
+		height: 30vh;
+	}
+	.banner-text__perfomance-circle {
+		position: absolute;
+		left: -13rem;
+		top: 55rem;
+		z-index: 0;
+		width: 12vw;
+	}
+	.banner-text__scroll-down {
+		position: relative;
+		left: 25%;
+		top: 5%;
+	}
+}
+
+@media (max-width: 500px) {
+	.banner-text {
+		max-width: 500px;
+		&__title {
+			font-size: 70px;
+			&::after {
+				left: 17%;
+				top: 8%;
+				width: 340px;
+			}
+		}
+		&__title-sub {
+			font-size: 70px;
+			padding: 0;
+		}
+	}
+	.banner-text {
+		&__subtitle {
+			max-width: 80rem;
+			font-size: 18px;
+			padding: 2rem 0;
+			width: 515px;
+			min-height: 70px;
+			padding: 3rem 0;
+		}
+	}
+	.banner-text__world-class {
+		max-width: 100px;
+	}
+	.banner-text__development {
+		width: 270px;
+		position: static;
+		margin-bottom: 3rem;
+	}
+	.banner-text-container {
+		flex-direction: column;
+		margin: 0 0 0 -10%;
+		&::before {
+			content: "";
+			background-image: url(../../assets/icons/play\ video.svg);
+			bottom: 220px;
+			width: 120px;
+			height: 120px;
+			right: 150px;
+		}
+	}
+	.banner-text__scroll-down {
+		display: none;
+	}
+	.general__button-baner {
+		display: none;
+	}
+	.banner-text__perfomance-img {
+		position: relative;
+		width: 41vw;
+		top: 100px;
+		left: 30px;
+		z-index: 0;
+	}
+	.banner-text__perfomance-circle {
+		position: absolute;
+		left: 35rem;
+		top: 680px;
+		z-index: 0;
+		width: 19vw;
+	}
+}
+
+

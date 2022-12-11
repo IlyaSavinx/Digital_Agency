@@ -42,3 +42,41 @@ html {
 		border: 1px solid $Bgcolorbutton;
 	}
 }
+
+@media (max-width: 1000px) {
+	html {
+		font-size: 5px;
+	}
+}
+
+@media (max-width: 500px) {
+	html {
+		font-size: 5px;
+	}
+	.pagination{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $Bgcolorbutton;
+		position: relative;
+		margin: 0 auto;
+		&::after{
+			content: '';
+			width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $Bgcolorbutton;
+		position: absolute;
+		left: 40px;
+		}
+		&::before{
+			content: '';
+			width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $Bgcolorbutton;
+		position: absolute;
+		right: 40px;
+		}
+	}
+}
