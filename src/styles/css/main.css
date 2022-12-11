@@ -134,6 +134,9 @@ html {
   html {
     font-size: 5px;
   }
+  .general-button {
+    border-radius: 50px;
+  }
   .pagination {
     width: 20px;
     height: 20px;
@@ -547,6 +550,15 @@ html {
     width: 19vw;
   }
 }
+@media (max-width: 414px) {
+  .banner-text__title {
+    position: relative;
+  }
+  .banner-text__title::after {
+    position: absolute;
+    right: 0.5em;
+  }
+}
 .about-agency__block {
   max-width: 113.963rem;
   margin: 0 auto;
@@ -623,6 +635,103 @@ html {
   text-align: center;
 }
 
+@media (max-width: 1000px) {
+  .about-agency__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3rem 0 0rem 0rem;
+  }
+  .about-agency__text {
+    width: 100%;
+  }
+  .presentation-photos {
+    padding-top: 25px;
+  }
+  .statistics-bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 23.7rem;
+  }
+  .statistics-bars .statistics-bar {
+    padding-top: 14.1rem;
+  }
+  .statistics-bars .statistics-bar__title {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+  }
+  .statistics-bars .statistics-bar__subtitle {
+    color: #E0E5F3;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .about-agency__text-title {
+    padding-top: 160px;
+  }
+  .about-agency__text-button {
+    border-radius: 50px;
+  }
+  .about-agency__photos {
+    position: relative;
+    z-index: 0;
+  }
+  .about-agency__photos::after {
+    content: url(../../assets/icons/circle_line.png);
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 85%;
+    left: 80%;
+  }
+  .statistics-bars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 23.7rem;
+  }
+  .statistics-bars .statistics-bar {
+    padding-top: 12rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .statistics-bars .statistics-bar__title {
+    color: #FFFFFF;
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+  }
+  .statistics-bars .statistics-bar__subtitle {
+    color: #E0E5F3;
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+}
 .approach {
   padding-top: 12rem;
 }

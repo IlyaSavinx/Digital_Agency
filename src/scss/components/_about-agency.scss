@@ -63,3 +63,87 @@
 		}
 	}
 }
+
+@media (max-width: 1000px) {
+	.about-agency__block {
+			flex-direction: column;
+			padding: 3rem 0 0rem 0rem;
+			
+	}
+	.about-agency__text{
+		width: 100%;
+	}
+	.presentation-photos{
+		padding-top: 25px;
+	}
+	.statistics-bars {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 23.7rem;
+		.statistics-bar {
+			padding-top: 14.1rem;
+			&__title {
+				color: $Fcgeneral;
+				font-family: $Ffglobal;
+				font-weight: 700;
+				font-size: 35px;
+				text-align: center;
+			}
+			&__subtitle {
+				color: $Fcparagraph;
+				font-family: $Ffglobal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 24px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.about-agency__text-title{
+		padding-top: 160px;
+	}
+	 .about-agency__text-button{
+		border-radius: 50px;
+	 }
+	.about-agency__photos {
+		position: relative;
+		z-index: 0;
+		&::after {
+			content: url(../../assets/icons/circle_line.png);
+			position: absolute;
+			z-index: -1;
+			right: 0;
+			top: 85%;
+			left: 80%;
+		}
+	}
+	.statistics-bars {
+		display: flex;
+		flex-direction: column;
+		margin: 0 23.7rem;
+	.statistics-bar {
+		padding-top: 12rem;
+		display: flex;
+		flex-direction: column;
+		&__title {
+			color: $Fcgeneral;
+			font-family: $Ffglobal;
+			font-weight: 700;
+			font-size: 48px;
+			text-align: center;
+		}
+		&__subtitle {
+			color: $Fcparagraph;
+			font-family: $Ffglobal;
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 24px;
+			text-align: center;
+		}
+	}
+}
+}
+
