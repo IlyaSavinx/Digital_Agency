@@ -1,15 +1,139 @@
 .main-footer {
-	background-color:$Bgcolorsection ;
+	background-color: $Bgcolorsection;
 }
+
 .footer-requisites {
 	display: flex;
 	justify-content: space-evenly;
 	position: relative;
 	padding: 0 2rem;
 }
-.footer__form{
+.footer__form {
 	padding: 80px 48px;
-		background-color: $Bgcolorbutton;
-		border-radius: 30px;
-		margin-top: 4.8rem;
+	background-color: $Bgcolorbutton;
+	border-radius: 30px;
+	margin-top: 4.8rem;
+}
+.form {
+	&__dotes-colum {
+		max-width: 19px;
+		max-height: 83px;
+	}
+	&__dotes-colum-horizon {
+		position: relative;
+		top: -65px;
+	}
+	&__form-title {
+		font-family: $Ffglobal;
+		font-weight: 600;
+		font-size: 20px;
+		padding: 0 0 2rem;
+	}
+	&__email {
+		background-color: transparent;
+		border: none;
+		border-bottom: 1px solid $Bgcolor;
+		width: 100%;
+		&:focus {
+			outline: none;
+		}
+		&::after {
+			content: ">";
+			display: inline-block;
+			width: 110px;
+			height: 110px;
+		}
+	}
+}
+.form__stroke-arrow {
+	position: relative;
+	&::after {
+		content: url(../../assets/icons/Stroke-arrow.png);
+		position: absolute;
+		right: 0;
+	}
+}
+.requisites-cards {
+	display: flex;
+	align-items: center;
+}
+.cards {
+	&__inform {
+		padding: 2.5rem;
+	}
+}
+.inform {
+	&__title {
+		font-family: $Ffglobal;
+		font-weight: 600;
+		font-size: 18px;
+		color: $Fcparagraph;
+		padding: 0 0 0.8rem;
+	}
+	&__street {
+		font-family: $Ffglobal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 35px;
+		color: $Fcparagraph;
+		max-width: 200px;
+	}
+	&__phone {
+		font-family: $Ffglobal;
+		font-weight: 400;
+		font-size: 16px;
+		// line-height: 19px;
+		color: $Fcparagraph;
+		padding: 0 0 0.8rem;
+	}
+	&__contact-email {
+		font-family: $Ffglobal;
+		font-weight: 400;
+		font-size: 16px;
+		// line-height: 16px;
+		color: $Fcparagraph;
+	}
+}
+.footer-additions {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 4.8rem 2rem;
+}
+.rights {
+	&__title {
+		font-family: $Ffglobal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: $Fcparagraph;
+	}
+}
+.privacy {
+	&__title {
+		font-family: $Ffglobal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: $Fcparagraph;
+	}
+}
+.additions-social-link {
+	display: flex;
+	gap: 2.7rem;
+}
+.social-link {
+	padding: 0 13.5px;
+	cursor: pointer;
+}
+.dotes-column {
+	position: absolute;
+	left: 12rem;
+	top: 2rem;
+	.form__dotes-colum{
+		position: relative;
+		top: 2rem;
+	}
+	
 }

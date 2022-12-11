@@ -23,11 +23,13 @@
 	}
 	&__badge {
 		font-family: $Ffglobal;
-		color: $Fcgeneral;
+		background-color: #F8F8F8;
+		color:  #0C1430;
 		font-weight: 500;
 		font-size: 12px;
 		padding: 5px 12px;
 		border-radius: 36px;
+		transition: 0.5s;
 		cursor: pointer;
 		&:hover {
 			color: $Bgcolorbutton;
@@ -49,5 +51,5 @@
 	}
 }
 .general__button-blog{
-    margin-top: 2rem;
+	margin: 2rem 0rem 11.2rem 0rem;
 }

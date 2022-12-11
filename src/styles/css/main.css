@@ -90,7 +90,12 @@ html {
 
 .wrapper {
   background-color: #172048;
+  background-image: url(../../../src/assets/icons/Background\ elements.svg);
+  height: 100%;
+  width: 100%;
   background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 .main-container {
@@ -178,42 +183,138 @@ html {
 }
 
 .banner-text {
-  text-align: center;
-  padding-top: 6.9rem;
-  max-width: 700px;
-  margin: 0 auto;
-}
-.banner-text__title {
-  font-weight: 70rem;
-  font-size: 15rem;
-  line-height: 18.2rem;
-  color: #FFFFFF;
-  font-family: "Inter";
-}
-.banner-text__title--active {
-  padding-right: 21rem;
-}
-.banner-text__subtitle {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 40rem;
-  font-size: 2.4rem;
-  line-height: 4rem;
-  color: #E0E5F3;
-  max-width: 515px;
-  text-align: left;
-  padding-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.banner-text__perfomance {
+.banner-text__title {
+  float: left;
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 150px;
+  color: #FFFFFF;
+}
+.banner-text__title::after {
+  content: "";
+  background-image: url(../../assets/icons/dotted_line.png);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 53%;
+  top: 108px;
+  width: 40vw;
+  height: 765px;
+}
+.banner-text__title-sub {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 150px;
+  color: #FFFFFF;
+  padding: 0 0 0 6rem;
+}
+
+.banner-text__subtitle {
+  max-width: 53.5rem;
+  font-family: "Inter";
+  font-size: 24px;
+  color: #E0E5F3;
+  padding: 2rem 0;
+  width: 515px;
+  min-height: 70px;
+  padding: 2rem 0;
+}
+
+.banner-text__world-class {
+  max-width: 200px;
+  float: left;
+}
+
+.banner-text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-left: 30%;
   position: relative;
+}
+.banner-text-container::before {
+  content: "";
+  background-image: url(../../assets/icons/play\ video.svg);
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 10%;
+  z-index: 11;
+  width: 150px;
+  height: 150px;
+  -webkit-backdrop-filter: blur(25px);
+          backdrop-filter: blur(25px);
+  border-radius: 50%;
+}
+
+.banner-text__development {
+  width: 375px;
+  position: relative;
+  top: -150px;
+  right: -1rem;
+  border-radius: 65px;
+}
+
+.banner-text__scroll-down {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #E0E5F3;
+  text-decoration: none;
+  display: block;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  position: relative;
+  top: -5rem;
+  left: 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.banner-text__scroll-down:hover {
+  color: #ffc93e;
+}
+.banner-text__scroll-down::before {
+  content: "◀";
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.banner-text__perfomance-img {
+  position: absolute;
+  top: 16rem;
+  left: -45rem;
   border-radius: 30px;
-  bottom: 5rem;
+  z-index: 1;
+  max-width: 241px;
+}
+
+.banner-text__perfomance-circle {
+  position: absolute;
+  left: -31rem;
+  top: 37rem;
+  z-index: 0;
+  width: 9vw;
 }
 
 .about-agency__block {
   max-width: 113.963rem;
   margin: 0 auto;
+  padding-top: 24rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +395,6 @@ html {
 
 .approach-background {
   width: 100%;
-  min-height: 65.8vh;
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #fec83e), color-stop(40%, #353F5B));
   background: linear-gradient(to right, #fec83e 40%, #353F5B 40%);
 }
@@ -656,11 +756,14 @@ html {
 }
 .blog-card__badge {
   font-family: "Inter";
-  color: #FFFFFF;
+  background-color: #F8F8F8;
+  color: #0C1430;
   font-weight: 500;
   font-size: 12px;
   padding: 5px 12px;
   border-radius: 36px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 .blog-card__badge:hover {
@@ -681,7 +784,7 @@ html {
 }
 
 .general__button-blog {
-  margin-top: 2rem;
+  margin: 2rem 0rem 11.2rem 0rem;
 }
 
 .main-footer {
@@ -704,4 +807,135 @@ html {
   background-color: #ffc93e;
   border-radius: 30px;
   margin-top: 4.8rem;
+}
+
+.form__dotes-colum {
+  max-width: 19px;
+  max-height: 83px;
+}
+.form__dotes-colum-horizon {
+  position: relative;
+  top: -65px;
+}
+.form__form-title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  padding: 0 0 2rem;
+}
+.form__email {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #172048;
+  width: 100%;
+}
+.form__email:focus {
+  outline: none;
+}
+.form__email::after {
+  content: ">";
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+}
+
+.form__stroke-arrow {
+  position: relative;
+}
+.form__stroke-arrow::after {
+  content: url(../../assets/icons/Stroke-arrow.png);
+  position: absolute;
+  right: 0;
+}
+
+.requisites-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cards__inform {
+  padding: 2.5rem;
+}
+
+.inform__title {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 18px;
+  color: #E0E5F3;
+  padding: 0 0 0.8rem;
+}
+.inform__street {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #E0E5F3;
+  max-width: 200px;
+}
+.inform__phone {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #E0E5F3;
+  padding: 0 0 0.8rem;
+}
+.inform__contact-email {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  color: #E0E5F3;
+}
+
+.footer-additions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 4.8rem 2rem;
+}
+
+.rights__title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E0E5F3;
+}
+
+.privacy__title {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E0E5F3;
+}
+
+.additions-social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.7rem;
+}
+
+.social-link {
+  padding: 0 13.5px;
+  cursor: pointer;
+}
+
+.dotes-column {
+  position: absolute;
+  left: 12rem;
+  top: 2rem;
+}
+.dotes-column .form__dotes-colum {
+  position: relative;
+  top: 2rem;
 }
