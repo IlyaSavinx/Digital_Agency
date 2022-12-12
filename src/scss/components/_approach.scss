@@ -7,7 +7,7 @@
 	.approach-container {
 		display: flex;
 		justify-content: space-between;
-		// max-width: 124.4rem;
+		
 		padding: 15.1rem 0rem 0rem 11rem;
 	}
 }
@@ -15,11 +15,7 @@
 	position: relative;
 	bottom: 5rem;
 	z-index: 1;
-	// ::after{
-	//     position: absolute;
-	//     content: url(../../assets/icons/circle_line.png);
 
-	// }
 	&__image {
 		max-width: 65rem;
 		min-height: 66.6rem;
