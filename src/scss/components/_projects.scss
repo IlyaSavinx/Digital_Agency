@@ -71,6 +71,9 @@
 }
 
 @media (max-width: 500px) {
+	.our-work {
+		padding-top: 100px;
+	}
 	.work-title {
 		padding: 4rem 0 2.4rem;
 
@@ -81,7 +84,6 @@
 		&__navigation {
 			width: 100%;
 			overflow: hidden;
-		
 		}
 
 		&__navigation-link {
@@ -93,7 +95,7 @@
 		padding-top: 50px;
 		display: flex;
 		overflow: hidden;
-		.projects__card-image--active{
+		.projects__card-image--active {
 			display: none;
 		}
 		&__card-image {
@@ -108,7 +110,7 @@
 		&__card-paragraph {
 			display: none;
 		}
-		&__card-image{
+		&__card-image {
 			width: 100%;
 		}
 	}
@@ -118,7 +120,6 @@
 	.projects__card-image {
 		height: 295px;
 		width: 300px;
-margin-bottom: 20px;
+		margin-bottom: 20px;
 	}
 }
-

@@ -84,7 +84,6 @@
 		font-family: $Ffglobal;
 		font-weight: 400;
 		font-size: 16px;
-		// line-height: 19px;
 		color: $Fcparagraph;
 		padding: 0 0 0.8rem;
 	}
@@ -92,7 +91,6 @@
 		font-family: $Ffglobal;
 		font-weight: 400;
 		font-size: 16px;
-		// line-height: 16px;
 		color: $Fcparagraph;
 	}
 }
@@ -133,15 +131,14 @@
 	position: absolute;
 	left: 12rem;
 	top: 2rem;
-	.form__dotes-colum{
+	.form__dotes-colum {
 		position: relative;
 		top: 2rem;
 	}
-	
 }
 
 @media (max-width: 500px) {
-	.main-footer{
+	.main-footer {
 		margin-top: 100px;
 	}
 	.footer {
@@ -163,7 +160,7 @@
 	.requisites-cards {
 		flex-direction: column;
 	}
-	.additions-rights{
+	.additions-rights {
 		display: none;
 	}
 	.footer-additions {
@@ -178,6 +175,7 @@
 			padding-bottom: 20px;
 			width: 100px;
 			text-align: center;
+			line-height: 65px;
 		}
 	}
 	.dotes-column {
@@ -186,21 +184,23 @@
 	.inform {
 		&__title {
 			text-align: center;
-
 		}
-	
+
 		&__street {
 			text-align: center;
-
 		}
-	
+
 		&__phone {
 			text-align: center;
-
+			padding-top: 20px;
 		}
-	
+
 		&__contact-email {
 			text-align: center;
+			padding-top: 20px;
 		}
+	}
+	.general__button-blog {
+		margin-top: 35px;
 	}
 }

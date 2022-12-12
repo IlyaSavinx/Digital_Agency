@@ -11,9 +11,9 @@
 }
 .blog-cards {
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 	gap: 3.2rem;
-	}
+}
 
 .blog-card {
 	&__blog-image {
@@ -23,8 +23,8 @@
 	}
 	&__badge {
 		font-family: $Ffglobal;
-		background-color: #F8F8F8;
-		color:  #0C1430;
+		background-color: #f8f8f8;
+		color: #0c1430;
 		font-weight: 500;
 		font-size: 12px;
 		padding: 5px 12px;
@@ -42,14 +42,75 @@
 		font-size: 16px;
 		padding: 1.6rem 0;
 	}
-    &__title {
+	&__title {
 		font-family: $Ffglobal;
 		color: $Fcgeneral;
 		font-weight: 700;
 		font-size: 30px;
-		
 	}
 }
-.general__button-blog{
+.general__button-blog {
 	margin: 2rem 0rem 11.2rem 0rem;
+}
+
+@media (max-width: 500px) {
+	.blog {
+		padding-top: 75px;
+	}
+	.blog__title {
+		font-size: 24px;
+		padding: 4rem 0rem 2.4rem;
+	}
+	.blog-cards {
+		overflow: hidden;
+		&__blog-card {
+			padding: 0 0.7rem 20px;
+		}
+	}
+	.blog-card {
+		&__blog-image {
+			border-radius: 50px;
+			margin: 0 0 1.45rem;
+			min-width: 327px;
+			height: 184px;
+		}
+
+		&__badge {
+			margin-left: 34%;
+		}
+
+		&__name-data {
+			text-align: center;
+			padding: 1.5rem 0;
+		}
+
+		&__title {
+			font-size: 20px;
+			text-align: center;
+			line-height: 38px;
+		}
+	}
+	.general__button-blog {
+		margin-left: 90px;
+	}
+	.pagination-blog {
+		margin-bottom: 80px;
+	}
+}
+@media (max-width: 320px) {
+	.blog-card {
+		&__blog-image {
+			min-width: 280px;
+		}
+
+		&__badge {
+			margin-left: 30%;
+		}
+	}
+	.general__button-blog {
+		margin-left: 60px;
+	}
+	.pagination-blog {
+		margin-bottom: 60px;
+	}
 }

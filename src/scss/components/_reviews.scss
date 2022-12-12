@@ -1,7 +1,7 @@
 .reviews {
 	position: relative;
 }
-.reviews__title{
+.reviews__title {
 	font-family: $Ffglobal;
 	color: $Fcgeneral;
 	font-weight: 700;
@@ -30,7 +30,7 @@
 		color: $Fcparagraph;
 		font-size: 16px;
 		width: 62rem;
-		padding: 4rem 0;	
+		padding: 4rem 0;
 	}
 	&__pointer {
 		&::after {
@@ -42,11 +42,11 @@
 		}
 	}
 }
-.reviews-card-user{
+.reviews-card-user {
 	display: flex;
 	justify-content: space-between;
 }
-.reviews-card-user--active{
+.reviews-card-user--active {
 	display: flex;
 	justify-content: flex-start;
 }
@@ -69,31 +69,27 @@
 		font-family: $Ffglobal;
 		color: $Bgcolorbutton;
 		font-size: 16px;
-		
 	}
 }
-.user__stars{
+.user__stars {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	gap: 0.8rem;
-	
 }
 
 @media (max-width: 500px) {
 	.reviews__title {
 		font-size: 20px;
-		// padding: 4rem 0rem 2.4rem;
 	}
-	.user__stars{
+	.user__stars {
 		display: flex;
 		justify-content: space-between;
-		
 	}
 	.reviews-cards__reviews-card {
 		padding: 2.65rem 0.5rem 2.9rem 1.55rem;
 	}
-	
+
 	.reviews-cards__reviews-card-left {
 		margin: 0 1.6rem 20px 0rem;
 	}
@@ -106,18 +102,17 @@
 		}
 		&__pointer {
 			&::after {
-				content:'';
-				
+				content: "";
 			}
 		}
 	}
-	.reviews-card-user{
-flex-direction: column;
+	.reviews-card-user {
+		flex-direction: column;
 	}
-	.user__stars{
+	.user__stars {
 		padding-left: 80px;
 	}
-	.reviews-card__icon-quote{
+	.reviews-card__icon-quote {
 		padding-left: 100px;
 	}
 }

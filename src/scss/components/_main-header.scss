@@ -20,7 +20,7 @@
 		line-height: 22px;
 		font-family: "Inter";
 		&:hover {
-			color: #FFC93E;
+			color: #ffc93e;
 		}
 	}
 }
@@ -28,22 +28,22 @@
 	width: 16.5px;
 	height: 1px;
 	background-color: $Fcgeneral;
-    position: relative;
+	position: relative;
 	&::after {
-        content: '';
+		content: "";
 		width: 16.5px;
 		height: 1px;
 		background-color: $Fcgeneral;
-        bottom: 6px;
-        position: absolute;
+		bottom: 6px;
+		position: absolute;
 	}
-    &::before {
-        content: '';
+	&::before {
+		content: "";
 		width: 16.5px;
 		height: 1px;
 		background-color: $Fcgeneral;
-        top: 6px;
-        position: absolute;
+		top: 6px;
+		position: absolute;
 	}
 }
 

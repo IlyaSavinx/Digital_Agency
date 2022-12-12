@@ -1,8 +1,6 @@
 html {
 	font-size: 10px;
 	scroll-behavior: smooth;
-	
-	
 }
 
 .wrapper {
@@ -18,13 +16,11 @@ html {
 	max-width: 1470px;
 	margin: 0 auto;
 	padding: 0px 15px;
-	
-	
 }
 
 .general-button {
 	display: block;
-    border: 1px solid white; 
+	border: 1px solid white;
 	font-size: 18px;
 	padding: 1.5rem 4.4rem 1.5rem 4.5rem;
 	border-radius: 3rem;
@@ -41,7 +37,6 @@ html {
 		cursor: pointer;
 		color: $Bgcolorbutton;
 		border: 1px solid $Bgcolorbutton;
-		
 	}
 }
 
@@ -55,34 +50,33 @@ html {
 	html {
 		font-size: 5px;
 	}
-	.pagination{
+	.pagination {
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color:  $Fcgeneral;
+		background-color: $Fcgeneral;
 		position: relative;
 		margin: 0 auto;
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: $Fcgeneral;
-		position: absolute;
-		left: 40px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: $Fcgeneral;
+			position: absolute;
+			left: 40px;
 		}
-		&::before{
-			content: '';
+		&::before {
+			content: "";
 			width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: $Bgcolorbutton;
-		position: absolute;
-		right: 40px;
+			height: 20px;
+			border-radius: 50%;
+			background-color: $Bgcolorbutton;
+			position: absolute;
+			right: 40px;
 		}
 	}
-	.general-button{
+	.general-button {
 		border-radius: 50px;
 	}
-	
 }

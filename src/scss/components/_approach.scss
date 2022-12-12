@@ -31,7 +31,7 @@
 	color: $Fcgeneral;
 	padding-left: 10rem;
 	text-align: center;
-	
+
 	&__title {
 		font-weight: 700;
 		font-size: 48px;
@@ -77,24 +77,19 @@
 }
 
 @media (max-width: 1000px) {
-	// .approach-background {
-	// 	background: linear-gradient(
-	// 		top,
-	// 		#ffc93e 0%,
-	// 		#ffc93e 35%,
-	// 		$Bgcolor 35%,
-	// 		$Bgcolor 100%
-	// 	);
-	// 	position: relative;
-	// }
-	// .approach-container{
-	// 	flex-direction: column-reverse;
-	// 	align-items: center;
-	// 	position: relative;
-	// 	.approach-text{
-	// 		position: absolute;
-	// 		top: 50px;
-			
-	// 	}
-	// }
+	.approach-background {
+		background: linear-gradient(
+			top,
+			$Bgcolor 0%,
+			$Bgcolor 75%,
+			#ffc93e 75%,
+			#ffc93e 100%
+		);
+
+		.approach-container {
+			display: flex;
+			flex-wrap: wrap-reverse;
+			align-items: center;
+		}
+	}
 }

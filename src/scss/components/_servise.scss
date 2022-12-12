@@ -16,7 +16,7 @@
 		font-size: 48px;
 		line-height: 58px;
 	}
-	.servise-title__text-button{
+	.servise-title__text-button {
 		margin: 0;
 	}
 }
@@ -47,37 +47,35 @@
 			line-height: 30px;
 		}
 	}
-	.servise-card--border-top-left{
-		
+	.servise-card--border-top-left {
 		border-radius: 50px 0px 0px 0px;
 	}
-	.servise-card--border-top-right{
+	.servise-card--border-top-right {
 		transform: translateY(6rem);
 		border-radius: 0px 50px 0px 0px;
 	}
-	.servise-card--border-bottom-left{
+	.servise-card--border-bottom-left {
 		border-radius: 0px 0px 0px 50px;
 	}
-	.servise-card--border-bottom-right{
+	.servise-card--border-bottom-right {
 		transform: translateY(6rem);
 		border-radius: 0px 0px 50px 0px;
 	}
-	
 }
-@media (max-width: 500px){
+@media (max-width: 500px) {
 	.servise-cards {
 		grid-template-columns: 1fr;
 	}
-	.servise-card--border-top-right{
+	.servise-card--border-top-right {
 		display: none;
 	}
-	.servise-card--border-bottom-left{
+	.servise-card--border-bottom-left {
 		display: none;
 	}
-	.servise-card--border-bottom-right{
+	.servise-card--border-bottom-right {
 		display: none;
 	}
-	.servise-title__text{
+	.servise-title__text {
 		font-family: $Ffglobal;
 		color: $Fcgeneral;
 		max-width: 38.2rem;
@@ -86,10 +84,9 @@
 		font-size: 24px;
 		line-height: 30px;
 	}
-	.servise-title__text-button{
+	.servise-title__text-button {
 		border: none;
 		color: $Bgcolorbutton;
 		background-color: $Bgcolor;
 	}
 }
-

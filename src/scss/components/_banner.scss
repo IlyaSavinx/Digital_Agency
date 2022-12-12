@@ -150,6 +150,9 @@
 			width: 120px;
 			height: 120px;
 			right: -75px;
+			&:hover {
+				transform: rotate(360deg);
+			}
 		}
 	}
 	.banner-text__perfomance-img {
@@ -242,14 +245,11 @@
 }
 
 @media (max-width: 414px) {
-	.banner-text__title{
+	.banner-text__title {
 		position: relative;
-		&::after{
+		&::after {
 			position: absolute;
 			right: 0.5em;
 		}
 	}
-	
 }
-
-
