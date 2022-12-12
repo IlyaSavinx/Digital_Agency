@@ -741,7 +741,7 @@ html {
   background: -webkit-gradient(linear, left top, right top, color-stop(40%, #fec83e), color-stop(40%, #353F5B));
   background: linear-gradient(to right, #fec83e 40%, #353F5B 40%);
 }
-.approach-background .main-container--approach-container {
+.approach-background .approach-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -851,7 +851,7 @@ html {
   display: grid;
   padding-top: 4rem;
   gap: 3rem;
-  grid-template-columns: 555px 555px;
+  grid-template-columns: 1fr 1fr;
 }
 .servise-cards .servise-card {
   background-color: #353f5b;
@@ -892,6 +892,20 @@ html {
   border-radius: 0px 0px 50px 0px;
 }
 
+@media (max-width: 500px) {
+  .servise-cards {
+    grid-template-columns: 1fr;
+  }
+  .servise-card--border-top-right {
+    display: none;
+  }
+  .servise-card--border-bottom-left {
+    display: none;
+  }
+  .servise-card--border-bottom-right {
+    display: none;
+  }
+}
 .our-work-container {
   max-width: 1140px;
   margin: 0 auto;

@@ -4,7 +4,7 @@
 .approach-background {
 	width: 100%;
 	background: linear-gradient(to right, #fec83e 40%, $Bgcolorsection 40%);
-	.main-container--approach-container {
+	.approach-container {
 		display: flex;
 		justify-content: space-between;
 		// max-width: 124.4rem;
@@ -77,5 +77,24 @@
 }
 
 @media (max-width: 1000px) {
-
+	// .approach-background {
+	// 	background: linear-gradient(
+	// 		top,
+	// 		#ffc93e 0%,
+	// 		#ffc93e 35%,
+	// 		$Bgcolor 35%,
+	// 		$Bgcolor 100%
+	// 	);
+	// 	position: relative;
+	// }
+	// .approach-container{
+	// 	flex-direction: column-reverse;
+	// 	align-items: center;
+	// 	position: relative;
+	// 	.approach-text{
+	// 		position: absolute;
+	// 		top: 50px;
+			
+	// 	}
+	// }
 }

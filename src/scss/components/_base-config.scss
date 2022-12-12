@@ -53,6 +53,32 @@ html {
 	html {
 		font-size: 5px;
 	}
+	.pagination{
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $battonColor;
+		position: relative;
+		margin: 0 auto;
+		&::after{
+			content: '';
+			width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $textColor;
+		position: absolute;
+		left: 40px;
+		}
+		&::before{
+			content: '';
+			width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		background-color: $textColor;
+		position: absolute;
+		right: 40px;
+		}
+	}
 	.general-button{
 		border-radius: 50px;
 	}

@@ -24,7 +24,7 @@
 	display: grid;
 	padding-top: 4rem;
 	gap: 3rem;
-	grid-template-columns: 555px 555px;
+	grid-template-columns: 1fr 1fr;
 	.servise-card {
 		background-color: #353f5b;
 		padding: 8.83rem 4.1rem 8.3rem 3.4rem;
@@ -63,5 +63,19 @@
 		border-radius: 0px 0px 50px 0px;
 	}
 	
+}
+@media (max-width: 500px){
+	.servise-cards {
+		grid-template-columns: 1fr;
+	}
+	.servise-card--border-top-right{
+		display: none;
+	}
+	.servise-card--border-bottom-left{
+		display: none;
+	}
+	.servise-card--border-bottom-right{
+		display: none;
+	}
 }
 
