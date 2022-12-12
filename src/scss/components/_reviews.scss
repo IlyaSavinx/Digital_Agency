@@ -79,3 +79,45 @@
 	gap: 0.8rem;
 	
 }
+
+@media (max-width: 500px) {
+	.reviews__title {
+		font-size: 20px;
+		// padding: 4rem 0rem 2.4rem;
+	}
+	.user__stars{
+		display: flex;
+		justify-content: space-between;
+		
+	}
+	.reviews-cards__reviews-card {
+		padding: 2.65rem 0.5rem 2.9rem 1.55rem;
+	}
+	
+	.reviews-cards__reviews-card-left {
+		margin: 0 1.6rem 20px 0rem;
+	}
+	.reviews-card {
+		&__paragraph {
+			line-height: 30px;
+			color: white;
+			width: 265px;
+			padding: 2rem 0;
+		}
+		&__pointer {
+			&::after {
+				content:'';
+				
+			}
+		}
+	}
+	.reviews-card-user{
+flex-direction: column;
+	}
+	.user__stars{
+		padding-left: 80px;
+	}
+	.reviews-card__icon-quote{
+		padding-left: 100px;
+	}
+}

@@ -1,6 +1,6 @@
-.our-work-container{
-  max-width: 1140px;  
-  margin: 0 auto;
+.our-work-container {
+	max-width: 1140px;
+	margin: 0 auto;
 }
 .work-title {
 	display: flex;
@@ -13,12 +13,12 @@
 		font-weight: 700;
 		font-size: 48px;
 	}
-    &__navigation {
+	&__navigation {
 		display: flex;
 		justify-content: space-between;
 		width: 43%;
 	}
-    &__navigation-link {
+	&__navigation-link {
 		font-family: $Ffglobal;
 		font-size: 16px;
 		color: $Fcgeneral;
@@ -31,33 +31,94 @@
 }
 .projects {
 	display: flex;
-    justify-content: space-between;
-    gap: 3.2rem;
+	justify-content: space-between;
+	gap: 3.2rem;
 
 	&__card-image {
 		border-radius: 50px;
 		width: 100%;
 	}
 
-    &__card-title {
+	&__card-title {
 		font-family: $Ffglobal;
 		color: $Fcgeneral;
 		font-weight: 700;
 		font-size: 24px;
-        padding: 3.2rem 0rem 3.2rem 0rem;
-        max-width: 39.3rem;
+		padding: 3.2rem 0rem 3.2rem 0rem;
+		max-width: 39.3rem;
 	}
-    &__card-paragraph {
+	&__card-paragraph {
 		font-family: $Ffglobal;
 		color: $Fcparagraph;
 		font-size: 16px;
-		
-		
 	}
+}
+.projects__button {
+	display: flex;
+	justify-content: center;
+}
 
+@media (max-width: 1000px) {
+	.work-title {
+		&__navigation-link {
+			padding: 32px 0 0 25px;
+		}
+		overflow: hidden;
+	}
+	.work-title__navigation {
+		width: 75%;
+	}
 }
-.projects__button{
-    display: flex;
-    justify-content: center;
-	
+
+@media (max-width: 500px) {
+	.work-title {
+		padding: 4rem 0 2.4rem;
+
+		&__text {
+			font-size: 24px;
+		}
+
+		&__navigation {
+			width: 100%;
+			overflow: hidden;
+		
+		}
+
+		&__navigation-link {
+			padding: 32px 0 0 25px;
+		}
+	}
+	.projects {
+		padding-left: 68px;
+		padding-top: 50px;
+		display: flex;
+		overflow: hidden;
+		.projects__card-image--active{
+			display: none;
+		}
+		&__card-image {
+			border-radius: 50px;
+			padding: 0 0.7rem 0.7rem;
+			width: 100%;
+		}
+		&__card-title {
+			display: none;
+		}
+
+		&__card-paragraph {
+			display: none;
+		}
+		&__card-image{
+			width: 100%;
+		}
+	}
+	.projects__button {
+		display: none;
+	}
+	.projects__card-image {
+		height: 295px;
+		width: 300px;
+margin-bottom: 20px;
+	}
 }
+

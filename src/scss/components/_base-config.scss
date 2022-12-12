@@ -35,11 +35,13 @@ html {
 	font-size: 18px;
 	line-height: 22px;
 	margin-top: 4.4rem;
+	transition: 1s;
 	&:hover {
 		background-color: transparent;
 		cursor: pointer;
 		color: $Bgcolorbutton;
 		border: 1px solid $Bgcolorbutton;
+		
 	}
 }
 
@@ -57,7 +59,7 @@ html {
 		width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color: $battonColor;
+		background-color:  $Fcgeneral;
 		position: relative;
 		margin: 0 auto;
 		&::after{
@@ -65,7 +67,7 @@ html {
 			width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color: $textColor;
+		background-color: $Fcgeneral;
 		position: absolute;
 		left: 40px;
 		}
@@ -74,7 +76,7 @@ html {
 			width: 20px;
 		height: 20px;
 		border-radius: 50%;
-		background-color: $textColor;
+		background-color: $Bgcolorbutton;
 		position: absolute;
 		right: 40px;
 		}
@@ -82,30 +84,5 @@ html {
 	.general-button{
 		border-radius: 50px;
 	}
-	.pagination{
-		width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: $Bgcolorbutton;
-		position: relative;
-		margin: 0 auto;
-		&::after{
-			content: '';
-			width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: $Bgcolorbutton;
-		position: absolute;
-		left: 40px;
-		}
-		&::before{
-			content: '';
-			width: 20px;
-		height: 20px;
-		border-radius: 50%;
-		background-color: $Bgcolorbutton;
-		position: absolute;
-		right: 40px;
-		}
-	}
+	
 }

@@ -139,3 +139,68 @@
 	}
 	
 }
+
+@media (max-width: 500px) {
+	.main-footer{
+		margin-top: 100px;
+	}
+	.footer {
+		&__form {
+			padding: 60px 48px;
+			background-color: $Bgcolorbutton;
+			border-radius: 30px;
+			margin-top: 10rem;
+		}
+	}
+	.cards {
+		&__inform {
+			padding: 3rem 0 0;
+		}
+	}
+	.footer-requisites {
+		flex-direction: column;
+	}
+	.requisites-cards {
+		flex-direction: column;
+	}
+	.additions-rights{
+		display: none;
+	}
+	.footer-additions {
+		flex-direction: column;
+		align-items: center;
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 2.4rem 1rem;
+	}
+	.privacy {
+		&__title {
+			padding-bottom: 20px;
+			width: 100px;
+			text-align: center;
+		}
+	}
+	.dotes-column {
+		display: none;
+	}
+	.inform {
+		&__title {
+			text-align: center;
+
+		}
+	
+		&__street {
+			text-align: center;
+
+		}
+	
+		&__phone {
+			text-align: center;
+
+		}
+	
+		&__contact-email {
+			text-align: center;
+		}
+	}
+}
